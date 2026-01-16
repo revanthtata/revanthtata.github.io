@@ -74,7 +74,7 @@ const CONFIG = {
   googleAnalytics: {id: ''},
   hotjar: { id: '', snippetVersion: 6},
   themeConfig: {
-    defaultTheme: 'lofi',
+    defaultTheme: 'dim',
     disableSwitch: false,
     respectPrefersColorScheme: false,
     displayAvatarRing: true,
@@ -118,7 +118,7 @@ const CONFIG = {
     ],
   },
 
-  footer: `Template provided by <a href="https://github.com/arifszn/gitprofile" target="_blank" rel="noreferrer">arifszn</a>, licensed under the MIT license.`,
+  footer: `Template provided by <a href="https://github.com/arifszn/gitprofile" target="_blank" rel="noreferrer">arifszn</a>, licensed under the MIT license.<br>Favicon provided by <a href="https://www.svgrepo.com/svg/255173/coffee-steam" target="_blank" rel="noreferrer">SVGRepo</a>, licensed under CC0 license.`,
 
   enablePWA: true,
 };
