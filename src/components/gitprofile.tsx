@@ -138,7 +138,6 @@ const GitProfile = ({ config }: { config: Config }) => {
                     profile={profile}
                     loading={loading}
                     avatarRing={sanitizedConfig.themeConfig.displayAvatarRing}
-                    resumeFileUrl={sanitizedConfig.resume.fileUrl}
                   />
                   <DetailsCard
                     profile={profile}

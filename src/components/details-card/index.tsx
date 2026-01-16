@@ -1,27 +1,14 @@
 import { Fragment } from 'react';
 import {
   AiFillGithub,
-  AiFillInstagram,
-  AiFillMediumSquare,
 } from 'react-icons/ai';
-import { CgDribbble } from 'react-icons/cg';
 import {
-  FaBehanceSquare,
   FaBuilding,
-  FaDev,
-  FaFacebook,
   FaGlobe,
   FaLinkedin,
-  FaMastodon,
-  FaReddit,
-  FaStackOverflow,
-  FaTelegram,
-  FaYoutube,
 } from 'react-icons/fa';
-import { FaSquareThreads } from 'react-icons/fa6';
 import { MdLocationOn } from 'react-icons/md';
-import { RiDiscordFill, RiMailFill, RiPhoneFill } from 'react-icons/ri';
-import { SiResearchgate, SiX, SiUdemy } from 'react-icons/si';
+import { RiMailFill, RiPhoneFill } from 'react-icons/ri';
 import { Profile } from '../../interfaces/profile';
 import {
   SanitizedGithub,
@@ -42,19 +29,6 @@ const isCompanyMention = (company: string): boolean => {
 
 const companyLink = (company: string): string => {
   return `https://github.com/${company.substring(1)}`;
-};
-
-const getFormattedMastodonValue = (
-  mastodonValue: string,
-  isLink: boolean,
-): string => {
-  const [username, server] = mastodonValue.split('@');
-
-  if (isLink) {
-    return `https://${server}/@${username}`;
-  } else {
-    return `${username}@${server}`;
-  }
 };
 
 const ListItem: React.FC<{
